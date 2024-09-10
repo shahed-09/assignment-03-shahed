@@ -31,6 +31,7 @@
           extend: {
             colors: {
               clifford: "#da373d",
+              "body-color": "#F4F4F4",
               "primary-color": "rgba(171, 239, 95, 1)",
             },
           },
@@ -43,7 +44,7 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope body-color">
     <header class="md:continer m-auto">
       <!-- nav goes here -->
       <nav></nav>
@@ -72,7 +73,136 @@
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- we design -->
+      <section
+        class="bg-[#F4F4F4] my-5 py-16 px-5 text-center lg:text-left md:py-14 lg:px-28 lg:py-25 mx-auto"
+      >
+        <div class="grid lg:grid-cols-2 items-center gap-5 lg:mt-10">
+          <!-- Text section -->
+          <div class="relative space-y-10">
+            <div class="sm:text-center lg:text-left">
+              <a
+                class="btn bg-white rounded-full text-[#494949] px-6 text-center"
+                href=""
+                ><i class="fa-solid text-[#494949] fa-arrow-right"></i> About
+                us</a
+              >
+            </div>
+            <div class="absolute -top-20 -left-20 hidden lg:block">
+              <img src="./assets/Vector.png" alt="" />
+            </div>
+            <h1
+              class="font-bold text-[#212121] text-3xl md:text-4xl lg:text-5xl"
+            >
+              We design thoughtful, liveable spaces
+            </h1>
+            <p
+              class="text-base text-[#494949] w-11/12 text-center lg:text-left m-auto lg:m-0"
+            >
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <!-- cards -->
+            <div
+              class="lg:space-y-5 grid grid-cols-1 md:grid-cols-2 gap-4 lg:grid-cols-1"
+            >
+              <!-- card-1 -->
+              <div>
+                <div class="p-3 lg:p-6 flex bg-white rounded-xl gap-3">
+                  <div>
+                    <img src="./assets/residential.png" alt="" />
+                  </div>
+                  <div class="text-left">
+                    <h1 class="text-xl text-[#494949] font-bold">
+                      Residential
+                    </h1>
+                    <p class="text-base text-[#737373] lg:w-3/4">
+                      The barn house captivates with its blend of rustic charm
+                      and modern.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- card-2 -->
+              <div class="p-3 lg:p-6 flex bg-white rounded-xl gap-3">
+                <div>
+                  <img src="./assets/residential.png" alt="" />
+                </div>
+                <div class="text-left">
+                  <h1 class="text-xl text-[#494949] font-bold">Residential</h1>
+                  <p class="text-base text-[#737373] lg:w-3/4">
+                    The barn house captivates with its blend of rustic charm and
+                    modern.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div>
+            <img class="w-full" src="./assets/Rectangle.png" alt="" />
+          </div>
+        </div>
+      </section>
+      <!-- numbers -->
+      <section class="my-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-">
+          <!-- number-1 -->
+          <div class="text-center">
+            <i class="fa-regular fa-comment text-[#797979]"></i>
+            <h3 class="text-bold text-[#494949] text-4xl">235+</h3>
+            <p class="text-base text-[#797979]">Happy client review</p>
+          </div>
+          <!-- number-1 -->
+          <div class="text-center">
+            <i class="fa-regular fa-comment text-[#797979]"></i>
+            <h3 class="text-bold text-[#494949] text-4xl">20+</h3>
+            <p class="text-base text-[#797979]">Work department</p>
+          </div>
+          <!-- number-1 -->
+          <div class="text-center">
+            <i class="fa-regular fa-comment text-[#797979]"></i>
+            <h3 class="text-bold text-[#494949] text-4xl">2323+</h3>
+            <p class="text-base text-[#797979]">Our Alltime client</p>
+          </div>
+          <!-- number-1 -->
+          <div class="text-center">
+            <i class="fa-regular fa-comment text-[#797979]"></i>
+            <h3 class="text-bold text-[#494949] text-4xl">67+</h3>
+            <p class="text-base text-[#797979]">Stuff member</p>
+          </div>
+          <!-- to here -->
+        </div>
+      </section>
+      <!-- Our work process -->
+      <section class="bodycolor my-10 bg-[#f4f4f4] pt-10 h-96">
+        <!-- texts -->
+        <div class="space-y-5">
+          <div class="sm:text-center">
+            <a
+              class="btn bg-white rounded-full text-[#494949] px-6 text-center"
+              href=""
+              ><i class="fa-solid text-[#494949] fa-arrow-right"></i> How we
+              work</a
+            >
+          </div>
+          <h1
+            class="font-bold text-[#212121] text-center text-3xl md:text-4xl lg:text-5xl"
+          >
+            Our Work Process
+          </h1>
+          <p
+            class="text-base text-[#494949] w-11/12 text-center m-auto lg:w-1/2"
+          >
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+        </div>
+        <!-- cards -->
+      </section>
+    </main>
     <footer></footer>
   </body>
 </html>
