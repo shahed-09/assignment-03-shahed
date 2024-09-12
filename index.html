@@ -47,7 +47,97 @@
   <body class="font-manrope bg-body-color">
     <header class="md:continer m-auto">
       <!-- nav goes here -->
-      <nav></nav>
+      <nav>
+        <div class="navbar bg-[#f4f4f4] md:w-11/12 m-auto py-5">
+          <div class="navbar-start justify-between w-full lg:w-fit">
+            <a class="btn btn-ghost text-3xl font-extrabold text-[#212121]"
+              ><i
+                class="fa-solid fa-arrow-right bg-[#ABEF5F] flex size-10 justify-center items-center rounded-full -rotate-45"
+              ></i>
+              Renterio</a
+            >
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm -ms-40 lg:-ms-0 dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Item 1</a></li>
+
+                <li><a>Item 3</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="navbar-center flex-1 hidden lg:flex justify-center">
+            <ul class="menu menu-horizontal px-1">
+              <li class="font-bold"><a>Home</a></li>
+              <li><a>Services</a></li>
+              <li><a>Portfolio</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact us</a></li>
+            </ul>
+          </div>
+          <div
+            class="navbar-end items-center font-bold hidden md:flex w-fit space-x-5"
+          >
+            <i
+              class="fa-solid p-2 bg-white text-[#737373] rounded-full border-2 border-gray-100 fa-magnifying-glass"
+            ></i>
+            <i
+              class="fa-solid p-2 bg-white text-[#737373] rounded-full border-2 border-gray-100 fa-cart-shopping"
+            ></i>
+            <a class="btn bg-[#ABEF5F] font-bold rounded-full"
+              >Book Consult
+              <i
+                class="fa-solid fa-arrow-right bg-[#000000] text-white flex size-7 justify-center items-center rounded-full -rotate-45"
+              ></i
+            ></a>
+            <div class="dropdown my-auto h-full mt-2">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm -ms-40 dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 lg:w-0 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
       <!-- banner -->
       <div class="mx-auto space-y-4 my-10">
         <img class="m-auto" src="./assets/banner.png" alt="" />
@@ -253,7 +343,7 @@
         <!-- portfolio texts -->
         <div class="pt-10">
           <div class="space-y-5">
-            <div class="sm:text-center">
+            <div class="text-center">
               <a
                 class="btn bg-[#D5F9AC] font-bold rounded-full text-[#494949] px-6 text-center"
                 href=""
@@ -264,7 +354,7 @@
             <h1
               class="font-bold text-[#212121] text-center text-3xl md:text-4xl lg:text-5xl"
             >
-              Our lates Portfolio
+              Our latest Portfolio
             </h1>
             <p
               class="text-base text-[#494949] w-11/12 text-center m-auto lg:w-1/2"
@@ -276,67 +366,81 @@
           </div>
         </div>
         <!-- Grid section -->
-        <div class="grid grid-cols-12 gap-5 w-5/6 m-auto">
+
+        <div
+          class="md:grid md:grid-cols-12 grid-rows-2 gap-5 w-5/6 m-auto mt-6"
+        >
           <!-- Card 1 -->
+
           <div
-            class="md:flex gap-3 border border-2 border-gray-200 rounded-3xl p-3 col-span-8"
+            class="border-2 border-gray-200 items-center rounded-3xl p-3 md:col-span-12 lg:col-span-8"
           >
-            <div class="">
-              <img class="object-fill" src="./assets/img1.png" alt="" />
-            </div>
-            <div class="space-y-5">
-              <h1 class="font-extrabold text-2xl text-[#494949]">Commercial</h1>
-              <p class="text-base text-[#737373]">
-                The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm
-                and modern .
-              </p>
-              <h3 class="text-black font-extrabold text-2xl">View details</h3>
+            <div class="md:grid grid-cols-5 gap-3 space-y-3 items-center">
+              <div class="col-span-2">
+                <img class="w-full" src="./assets/img1.png" alt="" />
+              </div>
+              <div class="space-y-4 md:col-span-3 md:w-3/4">
+                <h1 class="font-extrabold text-2xl text-[#494949]">
+                  Commercial
+                </h1>
+                <p class="text-base text-[#737373]">
+                  The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .
+                </p>
+                <h3 class="text-black font-extrabold text-2xl">View details</h3>
+              </div>
             </div>
           </div>
           <!-- card 2 -->
           <div
-            class="p-3 border border-2 border-gray-200 rounded-3xl col-span-4"
+            class="p-3 border-2 border-gray-200 rounded-3xl md:col-span-6 lg:col-span-4"
           >
-            <img class="" src="./assets/img2.png" alt="" />
+            <div class="flex">
+              <img class="w-full items-center" src="./assets/img2.png" alt="" />
+            </div>
           </div>
           <!-- card-3 -->
           <div
-            class="p-3 border border-2 border-gray-200 rounded-3xl col-span-3"
+            class="p-3 border-2 border-gray-200 rounded-3xl md:col-span-6 lg:col-span-3"
           >
-            <img src="./assets/img3.png" alt="" />
+            <img class="w-full" src="./assets/img3.png" alt="" />
           </div>
           <!-- card-4 -->
           <div
-            class="md:flex gap-3 border border-2 border-gray-200 rounded-3xl p-3 col-span-6"
+            class="md:flex gap-3 border-2 border-gray-200 rounded-3xl p-3 md:col-span-12 lg:col-span-6"
           >
-            <div class="col-span-6">
-              <img src="./assets/img4.png" alt="" />
-            </div>
-            <div>
-              <h1 class="font-extrabold text-2xl text-[#494949]">Commercial</h1>
-              <p class="text-base text-[#737373]">
-                The barn house captivates with its blend of rustic charm and
-                modern. The barn house captivates with its blend of rustic charm
-                and modern .
-              </p>
-              <h3 class="text-black font-extrabold text-2xl">View details</h3>
+            <div class="md:grid grid-cols-2 gap-3 space-y-3 items-center">
+              <div class="col-span-1">
+                <img class="w-full" src="./assets/img4.png" alt="" />
+              </div>
+              <div class="space-y-3 md:col-span-1 md:w-3/4">
+                <h1 class="font-extrabold text-2xl text-[#494949]">
+                  Commercial
+                </h1>
+                <p class="text-base text-[#737373]">
+                  The barn house captivates with its blend of rustic charm and
+                  modern. The barn house captivates with its blend of rustic
+                  charm and modern .
+                </p>
+                <h3 class="text-black font-extrabold text-2xl">View details</h3>
+              </div>
             </div>
           </div>
           <!-- card 5 -->
           <div
-            class="p-3 border border-2 border-gray-200 rounded-3xl col-span-3"
+            class="p-3 border-2 border-gray-200 rounded-3xl md:col-span-12 lg:col-span-3"
           >
-            <img src="./assets/img5.png" alt="" />
+            <img class="w-full" src="./assets/img5.png" alt="" />
           </div>
         </div>
       </section>
       <!-- Read article news section -->
-      <section class="my-10 m-auto">
+      <section class="my-20 m-auto">
         <!-- section text -->
         <div class="pt-10 mb-10">
           <div class="space-y-5">
-            <div class="sm:text-center">
+            <div class="text-center">
               <a
                 class="btn bg-[#D5F9AC] font-bold rounded-full text-[#494949] px-6 text-center"
                 href=""
@@ -474,7 +578,9 @@
         </div>
       </section>
       <!-- Form section starts here -->
-      <section class="my-10">
+      <section
+        class="py-20 bg-[url('./assets/bg.jpg')] object-cover object-center"
+      >
         <!-- Text -->
 
         <div class="space-y-5 my-10">
@@ -499,59 +605,71 @@
           </p>
         </div>
         <!-- form goes here -->
-        <div
-          class="my-10 grid md:grid-cols-2 w-5/6 m-auto md:text-center gap-3"
-        >
-          <div class="w-full m-auto">
+        <div class="my-10 w-3/4 m-auto md:text-center space-y-3">
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-3"
+          >
             <input
-              class="px-20 py-3 rounded-full"
               type="text"
               name=""
-              required
               id=""
-              placeholder="First Name*"
+              required
+              placeholder="First name*"
+              class="w-full rounded-full p-5"
             />
-          </div>
-          <div class="w-full m-auto">
             <input
-              class="px-20 py-3 rounded-full"
               type="text"
               name=""
-              required
               id=""
-              placeholder="First Name*"
+              required
+              placeholder="Last name*"
+              class="w-full rounded-full p-5"
             />
           </div>
-          <div class="w-full m-auto">
+          <div
+            class="flex flex-col md:flex-row justify-center items-center gap-3"
+          >
             <input
-              class="px-20 py-3 rounded-full"
-              type="text"
+              type="number"
               name=""
-              required
               id=""
-              placeholder="Phone number*"
+              required
+              placeholder="Phone Number*"
+              class="w-full rounded-full p-5"
             />
-          </div>
-          <div class="">
             <input
               type="email"
-              class="px-20 py-3 rounded-full"
               name=""
-              required
               id=""
-              placeholder="Your email*"
+              required
+              placeholder="Your Email*"
+              class="w-full rounded-full p-5"
             />
           </div>
-          <div>
-            <input type="text" name="" id="" />
+          <textarea
+            class="w-full rounded-3xl p-5"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="mx-auto text-center w-full">
+            <a class="btn w-full rounded-full text-black bg-[#92ff15]" href=""
+              >Send Email
+              <i
+                class="fa-solid fa-arrow-right text-white bg-[#000000] size-8 flex items-center justify-center -rotate-45 rounded-full"
+              ></i
+            ></a>
           </div>
         </div>
       </section>
     </main>
     <footer class="bg-[#1C1C1C] py-20 space-y-10">
-      <h1 class="text-white text-center font-bold text-4xl">
+      <h1
+        class="text-white flex items-center gap-2 justify-center text-center font-bold text-4xl"
+      >
         <i
-          class="fa-solid fa-arrow-right bg-[#ABEF5F] p-2 rounded-full -rotate-45"
+          class="fa-solid fa-arrow-right bg-[#ABEF5F] flex size-10 justify-center items-center rounded-full -rotate-45"
         ></i>
         Renterio
       </h1>
@@ -561,7 +679,7 @@
       </p>
       <div class="w-full">
         <ul
-          class="md:flex gap-10 justify-center space-y-6 text-center text-[#717171]"
+          class="md:flex gap-10 justify-center space-y-6 md:space-y-0 text-center text-[#717171]"
         >
           <li>Home</li>
           <li>Services</li>
